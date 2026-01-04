@@ -1,199 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Caprichos Restaurante | Bucaramanga</title>
-  <meta name="description" content="Caprichos Restaurante y Heladería en Bucaramanga. Comida artesanal, hamburguesas, postres y un ambiente acogedor en Diamante II." />
-  <meta name="keywords" content="Caprichos Restaurante, Bucaramanga, hamburguesas artesanales, heladería, restaurante Diamante II" />
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-    body { color: #2b2b2b; background-color: #fff; line-height: 1.6; }
-
-    header {
-      min-height: 100vh;
-      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('img/hero-caprichos.jpg') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-      padding: 2rem;
-    }
-
-    header h1 { font-size: 3rem; letter-spacing: 2px; }
-    header p { max-width: 700px; margin: 1rem 0 2rem; font-size: 1.2rem; }
-
-    .btn {
-      background: #c0392b;
-      color: #fff;
-      padding: 0.9rem 2rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn:hover { background: #a93226; }
-
-    section { padding: 4rem 8%; }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    .section-title h2 { font-size: 2.2rem; color: #c0392b; }
-    .section-title p { max-width: 700px; margin: auto; }
-
-    .about {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .about img { width: 100%; border-radius: 16px; }
-
-    .menu {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .menu-item {
-      background: #f9f9f9;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0,0,0,.08);
-    }
-
-    .menu-item img { width: 100%; height: 200px; object-fit: cover; }
-    .menu-item div { padding: 1.2rem; }
-    .menu-item h3 { margin-bottom: .5rem; }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .gallery img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-
-    .location {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      align-items: center;
-    }
-
-    iframe { width: 100%; height: 350px; border-radius: 16px; border: none; }
-
-    footer {
-      background: #2b2b2b;
-      color: #fff;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    footer a { color: #e74c3c; text-decoration: none; }
-
-    @media (max-width: 768px) {
-      header h1 { font-size: 2.2rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caprichos Restaurante - Bucaramanga</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Caprichos Restaurante</h1>
-  <p>Restaurante y Heladería en la ciudad bonita. Sabor artesanal, ambiente acogedor y experiencias que provocan antojos.</p>
-  <a href="https://www.instagram.com/caprichos_restaurantebga" target="_blank" class="btn">Ver Instagram</a>
-</header>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="logo-text">Caprichos</h1>
+            <p class="subtitle">RESTAURANTE BUCARAMANGA</p>
+            <p class="slogan">Sabor que Enamora</p>
+            <div class="hero-btns">
+                <a href="#" class="btn btn-gold">VER MENÚ</a>
+                <a href="#" class="btn btn-dark">RESERVA AQUÍ</a>
+            </div>
+        </div>
+    </header>
 
-<section>
-  <div class="section-title">
-    <h2>Sobre Nosotros</h2>
-    <p>Caprichos nace para consentir tu paladar con recetas artesanales, ingredientes de calidad y un servicio cercano.</p>
-  </div>
+    <section class="about container">
+        <div class="about-text">
+            <h2>Sobre Nosotros</h2>
+            <h3>Un lugar para disfrutar</h3>
+            <p>Ubicados en el corazón de Bucaramanga, en Caprichos ofrecemos una experiencia culinaria única en un ambiente acogedor y familiar.</p>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800" alt="Restaurante Interior">
+        </div>
+    </section>
 
-  <div class="about">
-    <img src="img/about-caprichos.jpg" alt="Caprichos Restaurante Bucaramanga" />
-    <p>Ubicados en el barrio Diamante II de Bucaramanga, somos el lugar ideal para disfrutar hamburguesas artesanales, postres irresistibles y helados para toda la familia. Cada plato está preparado con dedicación y pasión.</p>
-  </div>
-</section>
+    <section class="featured container">
+        <h2>Platos Destacados</h2>
+        <p>Descubre nuestros sabores</p>
+        <div class="grid-menu">
+            <div class="card">
+                <img src="https://via.placeholder.com/250x180" alt="Hamburguesa">
+                <div class="card-info">
+                    <h4>Hamburguesa Clásica</h4>
+                    <p class="price">$22,000</p>
+                    <button class="btn-order">Pedir Ahora</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250x180" alt="Costillas">
+                <div class="card-info">
+                    <h4>Costillas BBQ</h4>
+                    <p class="price">$35,000</p>
+                    <button class="btn-order">Pedir Ahora</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250x180" alt="Milkshake">
+                <div class="card-info">
+                    <h4>Milkshake Oreo</h4>
+                    <p class="price">$15,000</p>
+                    <button class="btn-order">Pedir Ahora</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250x180" alt="Waffle">
+                <div class="card-info">
+                    <h4>Waffle con Helado</h4>
+                    <p class="price">$14,000</p>
+                    <button class="btn-order">Pedir Ahora</button>
+                </div>
+            </div>
+        </div>
 
-<section style="background:#fafafa;">
-  <div class="section-title">
-    <h2>Platos Destacados</h2>
-    <p>Algunos de los favoritos de nuestros clientes</p>
-  </div>
+        
+    </section>
 
-  <div class="menu">
-    <div class="menu-item">
-      <img src="img/hamburguesa.jpg" alt="Hamburguesa artesanal" />
-      <div>
-        <h3>Hamburguesa Artesanal</h3>
-        <p>Carne jugosa, pan artesanal y acompañamientos irresistibles.</p>
-      </div>
-    </div>
+<section class="gallery container">
+        <div class="section-title">
+            <h2>Nuestro Ambiente</h2>
+            <p>Galería</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="main-gallery-img">
+                <img src="https://via.placeholder.com/500x350" alt="Bebidas">
+            </div>
+            <div class="side-gallery">
+                <img src="https://via.placeholder.com/300x200" alt="Local 1">
+                <img src="https://via.placeholder.com/300x200" alt="Postre">
+                <img src="https://via.placeholder.com/300x200" alt="Local 2">
+            </div>
+        </div>
+        <p class="visit-us"><strong>Visítanos:</strong> Cra 35 #44-55, Bucaramanga.</p>
+    </section>
 
-    <div class="menu-item">
-      <img src="img/postres.jpg" alt="Postres" />
-      <div>
-        <h3>Postres Caseros</h3>
-        <p>Dulces preparados para cerrar tu experiencia con broche de oro.</p>
-      </div>
-    </div>
+    <section class="map-section container">
+        <div class="map-container">
+            <div class="map-placeholder">
+                <div class="map-card">
+                    <h4>Ubícanos</h4>
+                    <p>Cra 38 #44-55, Bucaramanga, Santander</p>
+                </div>
+                <img src="https://via.placeholder.com/1000x300" alt="Mapa de Google" style="width:100%; border-radius: 10px;">
+            </div>
+        </div>
+    </section>
 
-    <div class="menu-item">
-      <img src="img/helados.jpg" alt="Heladería" />
-      <div>
-        <h3>Heladería</h3>
-        <p>Refrescantes, cremosos y perfectos para cualquier momento.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <h2>Galería</h2>
-    <p>Algunos momentos y sabores de Caprichos</p>
-  </div>
-
-  <div class="gallery">
-    <img src="img/galeria1.jpg" alt="Caprichos comida" />
-    <img src="img/galeria2.jpg" alt="Caprichos restaurante" />
-    <img src="img/galeria3.jpg" alt="Caprichos postres" />
-    <img src="img/galeria4.jpg" alt="Caprichos ambiente" />
-  </div>
-</section>
-
-<section style="background:#fafafa;">
-  <div class="section-title">
-    <h2>Ubicación</h2>
-    <p>Visítanos y vive la experiencia Caprichos</p>
-  </div>
-
-  <div class="location">
-    <div>
-      <h3>📍 Diamante II, Bucaramanga</h3>
-      <p>Dirección: Cra 89 #23-17</p>
-      <p>Horario: Lunes a Domingo - 12:00 p.m. a 11:00 p.m.</p>
-      <p>Síguenos en <a href="https://www.instagram.com/caprichos_restaurantebga" target="_blank">@caprichos_restaurantebga</a></p>
-    </div>
-    <iframe src="https://www.google.com/maps?q=Diamante+II+Bucaramanga&output=embed"></iframe>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Caprichos Restaurante | Bucaramanga</p>
-  <p>Diseñado para atraer, antojar y convertir clientes</p>
-</footer>
+    <section class="testimonials container">
+        <h2>Lo que Dicen Nuestros Clientes</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Cliente 1" class="user-photo">
+                <p>"¡Excelente comida! El ambiente es muy acogedor. Volveré pronto."</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Cliente 2" class="user-photo">
+                <p>"Las costillas BBQ son las mejores que he probado. 100% recomendados."</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Cliente 3" class="user-photo">
+                <p>"Los postres son una delicia. ¡Me encanta el milkshake!"</p>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
