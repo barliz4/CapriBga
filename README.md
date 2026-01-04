@@ -11,6 +11,8 @@ El sitio web cuenta con una estructura de una sola página (Single Page Applicat
 * **Galería:** Collage de fotos del establecimiento y platillos.
 * **Google Maps:** Ubicación interactiva en Bucaramanga.
 
+Demo en vivo: https://barliz4.github.io/CapriBga/
+
 ---
 
 ## 🛠️ Tecnologías y Herramientas
